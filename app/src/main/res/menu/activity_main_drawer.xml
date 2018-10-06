@@ -7,29 +7,22 @@
         <item
             android:id="@+id/nav_first_layout"
             android:icon="@drawable/ic_menu_camera"
-            android:title="First Layout" />
+            android:title="Situation" />
         <item
             android:id="@+id/nav_second_layout"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Second Layout" />
+            android:icon="@drawable/ic_menu_share"
+            android:title="Feed" />
         <item
-            android:id="@+id/nav_third_layout"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Third Layout" />
+            android:id="@+id/nav_share"
+            android:icon="@android:drawable/ic_menu_call"
+            android:title="Quick Dial" />
+        <item
+            android:id="@+id/nav_send"
+            android:icon="@android:drawable/ic_menu_help"
+            android:title="Help" />
 
     </group>
 
-    <item android:title="Emergency">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@android:drawable/ic_menu_call"
-                android:title="Quick Dial" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@android:drawable/ic_menu_help"
-                android:title="Help" />
-        </menu>
-    </item>
+
 
 </menu>
