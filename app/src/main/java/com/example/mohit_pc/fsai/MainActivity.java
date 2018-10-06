@@ -3,6 +3,7 @@ package com.example.mohit_pc.fsai;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -17,6 +18,11 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    FirstFragment firstFragment = null;
+    SecondFragment secondFragment = null;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,18 +87,46 @@ public class MainActivity extends AppCompatActivity
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
+
+        Fragment swappable ;
+
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        if (id == R.id.nav_first_layout) {
-            fragmentManager.beginTransaction().replace(R.id.content_frame,new FirstFragment()).commit();
-        } else if (id == R.id.nav_second_layout) {
-            fragmentManager.beginTransaction().replace(R.id.content_frame,new SecondFragment()).commit();
-        } else if (id == R.id.nav_third_layout) {
-            fragmentManager.beginTransaction().replace(R.id.content_frame,new ThirdFragment()).commit();
-        } else if (id == R.id.nav_share) {
+//        FragmentManager fragmentManager = getSupportFragmentManager();
+//        if (id == R.id.nav_first_layout) {
+//            fragmentManager.beginTransaction().replace(R.id.content_frame,new FirstFragment()).commit();
+//        } else if (id == R.id.nav_second_layout) {
+//            fragmentManager.beginTransaction().replace(R.id.content_frame,new SecondFragment()).commit();
+//        } else if (id == R.id.nav_third_layout) {
+//            fragmentManager.beginTransaction().replace(R.id.content_frame,new ThirdFragment()).commit();
+//        } else if (id == R.id.nav_share) {
+//
+//        } else if (id == R.id.nav_send) {
+//
+//        }
 
-        } else if (id == R.id.nav_send) {
+        switch (id){
+
+
+            case  R.id.nav_first_layout:
+                if(firstFragment == null){
+                    firstFragment = new FirstFragment();
+                }
+                swapFragment(firstFragment);
+
+            break;
+
+            case  R.id.nav_second_layout:
+                if(secondFragment == null){
+                    secondFragment = new SecondFragment();
+
+                }
+                swapFragment(secondFragment);
+
+
+            break;
+
+
 
         }
 
@@ -100,4 +134,19 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+
+
+    void swapFragment(Fragment frag){
+        if(frag == null){
+            Toast.makeText(this, "Error Swapping Fragment", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+
+        getSupportFragmentManager().beginTransaction().replace(R.id.content_frame,frag).addToBackStack(null).commit();
+    }
+
+
+
 }
