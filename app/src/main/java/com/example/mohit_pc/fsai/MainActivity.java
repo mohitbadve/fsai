@@ -21,7 +21,8 @@ public class MainActivity extends AppCompatActivity
 
     FirstFragment firstFragment = null;
     SecondFragment secondFragment = null;
-
+    ThirdFragment thirdFragment = null;
+    FourthFragment fourthFragment = null;
 
 
     @Override
@@ -126,7 +127,21 @@ public class MainActivity extends AppCompatActivity
 
             break;
 
+            case R.id.nav_share:
+                if(thirdFragment == null){
+                    thirdFragment = new ThirdFragment();
+                }
+                swapFragment(thirdFragment);
 
+            break;
+
+            case R.id.nav_send:
+                if(fourthFragment == null){
+                    fourthFragment = new FourthFragment();
+                }
+                swapFragment(fourthFragment);
+
+                break;
 
         }
 
