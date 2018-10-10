@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Feeds.CreateFeed">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginVertical="7.5dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Title"/>
+        </android.support.design.widget.TextInputLayout>
+         <android.support.design.widget.TextInputLayout
+            android:layout_marginVertical="7.5dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Content"/>
+        </android.support.design.widget.TextInputLayout>
+         <android.support.design.widget.TextInputLayout
+            android:layout_marginVertical="7.5dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/writtenBy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Written By"/>
+        </android.support.design.widget.TextInputLayout>
+         <Button
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:textStyle="bold"
+             android:id="@+id/createButton"
+             android:text="Pick Image"
+             android:layout_marginHorizontal="15dp"
+             style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"/>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

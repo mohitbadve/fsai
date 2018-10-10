@@ -16,6 +16,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.example.mohit_pc.fsai.Feeds.CreateFeed;
+import com.example.mohit_pc.fsai.Feeds.Feed;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -23,6 +26,7 @@ public class MainActivity extends AppCompatActivity
     SecondFragment secondFragment = null;
     ThirdFragment thirdFragment = null;
     FourthFragment fourthFragment = null;
+    Feed feed = null;
 
 
     @Override
@@ -36,8 +40,8 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-              //  Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                     //   .setAction("Action", null).show();
+                //  Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                //   .setAction("Action", null).show();
                 Toast.makeText(MainActivity.this, "Chat", Toast.LENGTH_SHORT).show();
             }
         });
@@ -115,7 +119,7 @@ public class MainActivity extends AppCompatActivity
                 }
                 swapFragment(firstFragment);
 
-            break;
+                break;
 
             case  R.id.nav_second_layout:
                 if(secondFragment == null){
@@ -125,7 +129,7 @@ public class MainActivity extends AppCompatActivity
                 swapFragment(secondFragment);
 
 
-            break;
+                break;
 
             case R.id.nav_share:
                 if(thirdFragment == null){
@@ -133,7 +137,7 @@ public class MainActivity extends AppCompatActivity
                 }
                 swapFragment(thirdFragment);
 
-            break;
+                break;
 
             case R.id.nav_send:
                 if(fourthFragment == null){
@@ -141,6 +145,16 @@ public class MainActivity extends AppCompatActivity
                 }
                 swapFragment(fourthFragment);
 
+                break;
+            case R.id.nav_feed:
+                if(feed == null){
+                    feed = new Feed();
+                }
+                swapFragment(feed);
+
+                break;
+            case R.id.nav_create_feed:
+                swapFragment(new CreateFeed());
                 break;
 
         }

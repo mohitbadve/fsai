@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.ramotion.foldingcell.FoldingCell
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/folding_cell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        ​
+        <FrameLayout
+            android:id="@+id/cell_content_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:visibility="gone">
+            <!--<include layout="@layout/expanded_cell"/>-->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                app:cardCornerRadius="8dp"
+                android:layout_margin="15dp"
+                android:elevation="15dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/logofsai"
+                        android:layout_marginBottom="25dp"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:background="#ffffff"
+                        android:textSize="22sp"
+                        android:textAlignment="center"
+                        android:layout_margin="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:text="This is usellesss title expanded"/>
+
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+        </FrameLayout>
+        ​
+        <FrameLayout
+            android:id="@+id/cell_title_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.CardView
+
+                app:cardCornerRadius="8dp"
+                android:layout_margin="15dp"
+                android:elevation="15dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/unExpandImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/logofsai"
+                        android:layout_marginBottom="25dp"/>
+
+                    <TextView
+                        android:id="@+id/unExpandTitle"
+                        android:textStyle="bold"
+                        android:background="#ffffff"
+                        android:textSize="22sp"
+                        android:textAlignment="center"
+                        android:layout_margin="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:text="This is usellesss title"/>
+
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+        </FrameLayout>
+        ​
+    </com.ramotion.foldingcell.FoldingCell>
+
+</RelativeLayout>
