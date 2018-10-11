@@ -29,6 +29,8 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
+import java.io.File;
+
 import static android.app.Activity.RESULT_OK;
 
 /**
@@ -104,7 +106,12 @@ public class CreateFeed extends Fragment {
             Snackbar.make(rootView,"Fields cant be left empty",Snackbar.LENGTH_LONG).show();
             return;
         }
-        String path = "sasjsa/uselsess";
+        String path = "feeds/images/";
+        File file = new File(uri.getPath());
+        if(file == null){
+            return;
+        }
+        path += file.getName();
         final StorageReference storageReference = FirebaseStorage.getInstance().getReference(path);
         Task<Uri> task = storageReference.putFile(uri).continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
             @Override
