@@ -28,6 +28,10 @@
         <activity
             android:name=".FriendlyMessage"
             android:label="@string/title_activity_friendly_message"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Helper"
+            android:label="@string/title_activity_helper"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
