@@ -60,6 +60,7 @@ ArrayList<BluePrintFeed> feed = new ArrayList<>();
         reference.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                feed.clear();
                 for(DataSnapshot childs : dataSnapshot.getChildren()){
                     feed.add(childs.getValue(BluePrintFeed.class));
                 }

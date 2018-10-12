@@ -109,6 +109,7 @@ public class CreateFeed extends Fragment {
         String path = "feeds/images/";
         File file = new File(uri.getPath());
         if(file == null){
+            Snackbar.make(rootView,"ERror getting image",Snackbar.LENGTH_LONG).show();
             return;
         }
         path += file.getName();
