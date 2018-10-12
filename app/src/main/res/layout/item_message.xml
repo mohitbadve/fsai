@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginLeft="10dp"
-    android:layout_marginStart="10dp"
-    android:orientation="vertical">
+
+    android:background="@drawable/rounded_rectangle_orange"
+    tools:layout_editor_absoluteY="81dp">
 
     <ImageView
         android:id="@+id/photoImageView"
@@ -13,20 +16,46 @@
         android:layout_height="wrap_content"
         android:adjustViewBounds="true" />
 
-    <TextView
-        android:id="@+id/messageTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="0"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        tools:text="Message" />
 
     <TextView
-        android:id="@+id/nameTextView"
+        android:id="@+id/usernameview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="0"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        tools:text="Name" />
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="John Doe"
+        android:textSize="12sp"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</LinearLayout>
+
+    <TextView
+        android:id="@+id/messageview"
+        android:layout_width="wrap_content"
+
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp"
+        android:maxWidth="270dp"
+        android:padding="8dp"
+        android:text="hi man, how are you?"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernameview" />
+
+
+    <TextView
+        android:id="@+id/text_message_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:paddingRight="10dp"
+        android:text="11:40"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/messageview"
+        app:layout_constraintLeft_toRightOf="@+id/messageview" />
+    <!--app:layout_constraintEnd_toEndOf="@+id/messageview" />-->
+
+
+</android.support.constraint.ConstraintLayout>
