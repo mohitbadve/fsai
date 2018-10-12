@@ -17,17 +17,19 @@ import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 
+
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.text.DateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 public class Chat extends AppCompatActivity {
-
     private static final String TAG = "MainActivity";
 
     public static final String ANONYMOUS = "anonymous";
@@ -102,7 +104,9 @@ public class Chat extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // TODO: Send messages on click
-                FriendlyMessage friendlyMessage = new FriendlyMessage(mMessageEditText.getText().toString(),mUsername,null);
+                String time = (DateFormat.getDateTimeInstance(2, 3).format(Calendar.getInstance().getTime())).substring(13,20);
+                System.out.println(time);
+                FriendlyMessage friendlyMessage = new FriendlyMessage(mMessageEditText.getText().toString(), mUsername, null, time);
                 mMessagesDatabaseRefrence.push().setValue(friendlyMessage);
                 // Clear input box
                 mMessageEditText.setText("");
@@ -141,7 +145,7 @@ public class Chat extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.main, menu);
+        // inflater.inflate(R.menu.main_menu, menu);
         return true;
     }
 

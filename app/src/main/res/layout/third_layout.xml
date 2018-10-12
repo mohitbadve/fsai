@@ -1,155 +1,198 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/background"
-    android:layout_width="match_parent" android:layout_height="match_parent">
-
-    <TextView
-        android:id="@+id/fireNo"
-        android:layout_width="96dp"
-        android:layout_height="40dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/imageButton"
-        android:layout_marginEnd="126dp"
-        android:text="Fire"
-        android:textSize="18sp"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="126dp" />
-
-    <TextView
-        android:id="@+id/policeNo"
-        android:layout_width="96dp"
-        android:layout_height="40dp"
-        android:layout_alignBottom="@+id/imageButton7"
-        android:layout_alignStart="@+id/fireNo"
-        android:text="Police"
-        android:textSize="18sp"
-        android:layout_alignLeft="@+id/fireNo" />
-
-    <TextView
-        android:id="@+id/ambulanceNo"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_alignStart="@+id/fireNo"
-        android:layout_alignTop="@+id/imageButton2"
-        android:text="Ambulance"
-        android:textSize="18sp"
-        android:layout_alignLeft="@+id/fireNo" />
-
-    <TextView
-        android:id="@+id/disasterNo"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_alignStart="@+id/fireNo"
-        android:layout_alignTop="@+id/imageButton3"
-        android:text="Disaster Helpline"
-        android:textSize="18sp"
-        android:layout_alignLeft="@+id/fireNo" />
-
-    <TextView
-        android:id="@+id/womenNo"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_alignStart="@+id/fireNo"
-        android:layout_alignTop="@+id/imageButton4"
-        android:text="Women Helpline"
-        android:textSize="18sp"
-        android:layout_alignLeft="@+id/fireNo" />
-
-    <TextView
-        android:id="@+id/mumbaiFireNo"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/fireNo"
-        android:layout_marginBottom="177dp"
-        android:text="Mumbai Fire Helpline"
-        android:textSize="18sp"
-        android:layout_alignLeft="@+id/fireNo" />
-
-    <TextView
-        android:id="@+id/railwayNo"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_alignStart="@+id/fireNo"
-        android:layout_alignTop="@+id/imageButton6"
-        android:text="Railway Accident"
-        android:textSize="18sp"
-        android:layout_alignLeft="@+id/fireNo" />
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp">
 
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="44dp"
+                android:layout_height="match_parent"
+                android:background="@android:drawable/ic_menu_call"
+                android:padding="40dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="Fire"
+
+                android:textSize="20dp" />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="43dp"
-        android:layout_marginTop="28dp"
-        app:srcCompat="@android:drawable/ic_menu_call"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="43dp" />
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="5dp">
 
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="wrap_content"
+        <ImageButton
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:padding="40dp"
+            android:id="@+id/imageButton2"
+            android:background="@android:drawable/ic_menu_call" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="Ambulance"
+
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/imageButton"
-        android:layout_marginTop="87dp"
-        app:srcCompat="@android:drawable/ic_menu_call"
-        android:layout_alignLeft="@+id/imageButton" />
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="5dp">
 
+        <ImageButton
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:padding="40dp"
+            android:id="@+id/imageButton3"
+            android:background="@android:drawable/ic_menu_call" />
 
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="wrap_content"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="Disaster Helpline"
+
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/imageButton"
-        android:layout_marginTop="147dp"
-        app:srcCompat="@android:drawable/ic_menu_call"
-        android:layout_alignLeft="@+id/imageButton" />
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="5dp">
 
+        <ImageButton
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:padding="40dp"
+            android:id="@+id/imageButton4"
+            android:background="@android:drawable/ic_menu_call" />
 
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="wrap_content"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="Women Helpline"
+
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/imageButton"
-        android:layout_below="@+id/imageButton3"
-        app:srcCompat="@android:drawable/ic_menu_call"
-        android:layout_alignLeft="@+id/imageButton" />
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="5dp">
 
-    <ImageButton
-        android:id="@+id/imageButton5"
-        android:layout_width="wrap_content"
+        <ImageButton
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:padding="40dp"
+            android:id="@+id/imageButton5"
+            android:background="@android:drawable/ic_menu_call" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="Mumbai Fire Helpline"
+
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/imageButton"
-        android:layout_alignTop="@+id/mumbaiFireNo"
-        app:srcCompat="@android:drawable/ic_menu_call"
-        android:layout_alignLeft="@+id/imageButton" />
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="5dp">
 
-    <ImageButton
-        android:id="@+id/imageButton6"
-        android:layout_width="wrap_content"
+        <ImageButton
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:padding="40dp"
+            android:id="@+id/imageButton6"
+            android:background="@android:drawable/ic_menu_call" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="Railway Accident"
+
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/imageButton"
-        android:layout_marginBottom="99dp"
-        app:srcCompat="@android:drawable/ic_menu_call"
-        android:layout_alignLeft="@+id/imageButton" />
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="5dp">
 
-    <ImageButton
-        android:id="@+id/imageButton7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/imageButton"
-        android:layout_marginBottom="33dp"
-        app:srcCompat="@android:drawable/ic_menu_call"
-        android:layout_alignLeft="@+id/imageButton" />
+        <ImageButton
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:padding="40dp"
+            android:id="@+id/imageButton7"
+            android:background="@android:drawable/ic_menu_call" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="Police"
+
+            android:textSize="20dp" />
+
+    </LinearLayout>
 
 
-</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

@@ -2,8 +2,6 @@ package com.example.mohit_pc.fsai;
 
 import android.app.Activity;
 import android.content.Context;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -11,10 +9,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.example.mohit_pc.fsai.FriendlyMessage;
+import com.example.mohit_pc.fsai.R;
+
 
 import java.util.List;
 
-public class MessageAdapter extends ArrayAdapter<FriendlyMessage> {
+public class MessageAdapter extends ArrayAdapter<FriendlyMessage>{
     public MessageAdapter(Context context, int resource, List<FriendlyMessage> objects) {
         super(context, resource, objects);
     }
@@ -26,8 +27,9 @@ public class MessageAdapter extends ArrayAdapter<FriendlyMessage> {
         }
 
         ImageView photoImageView = (ImageView) convertView.findViewById(R.id.photoImageView);
-        TextView messageTextView = (TextView) convertView.findViewById(R.id.messageTextView);
-        TextView authorTextView = (TextView) convertView.findViewById(R.id.nameTextView);
+        TextView messageTextView = (TextView) convertView.findViewById(R.id.messageview);
+        TextView authorTextView = (TextView) convertView.findViewById(R.id.usernameview);
+        TextView messageTiming = (TextView) convertView.findViewById(R.id.text_message_time);
 
         FriendlyMessage message = getItem(position);
 
@@ -45,9 +47,8 @@ public class MessageAdapter extends ArrayAdapter<FriendlyMessage> {
             messageTextView.setText(message.getText());
         }
         authorTextView.setText(message.getName());
+        messageTiming.setText(message.getTime());
 
         return convertView;
     }
 }
-
-
