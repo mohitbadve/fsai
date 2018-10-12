@@ -63,7 +63,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
         android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:text="\n\nCreate Feed\n\nThis Section helps you to upload a feed."
+        android:text="\n\nCreate Feed\n\nThis Section allows you to upload a feed."
         android:textColor="#000000" />
     <TextView
         android:id="@+id/section_label6"
