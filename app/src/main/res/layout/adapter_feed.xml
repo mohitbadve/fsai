@@ -13,7 +13,7 @@
         <include layout="@layout/feed_individual" />
 
         <include
-            android:id="@+id/expandedImage"
+            android:id="@+id/expandedIklmage"
             layout="@layout/expanded_cell" />
 
 

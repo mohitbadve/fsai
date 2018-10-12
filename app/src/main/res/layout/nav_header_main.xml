@@ -33,13 +33,13 @@
         app:fontFamily="sans-serif" />
 
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:width="200dp"
-        android:text="@string/nav_header_subtitle"
-        android:textColor="@android:color/background_light" />
+    <!--<TextView-->
+        <!--android:id="@+id/textView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:width="200dp"-->
+        <!--android:text="@string/nav_header_subtitle"-->
+        <!--android:textColor="@android:color/background_light" />-->
 
 
 </LinearLayout>

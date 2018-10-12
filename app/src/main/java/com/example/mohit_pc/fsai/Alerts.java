@@ -92,12 +92,12 @@ public class Alerts extends Service {
 
             /* Create or update. */
             NotificationChannel channel = new NotificationChannel("01",
-                    "channel",
-                    NotificationManager.IMPORTANCE_DEFAULT);
+                    "channel",   NotificationManager.IMPORTANCE_DEFAULT);
             notificationManagerOreo.createNotificationChannel(channel);
 //            notificationManagerOreo.createNotificationChannel();
             notificationManagerOreo.notify(58,mBuilder.build());
         }else {
+
             notificationManager.notify(58, mBuilder.build());
 
         }
