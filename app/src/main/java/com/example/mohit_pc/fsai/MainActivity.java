@@ -161,6 +161,9 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_create_feed:
                 swapFragment(new CreateFeed());
                 break;
+case R.id.nav_create_alert:
+                swapFragment(new CreateNotification());
+                break;
 
         }
 

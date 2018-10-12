@@ -1,7 +1,11 @@
 package com.example.mohit_pc.fsai;
 
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.app.Service;
+import android.content.Context;
 import android.content.Intent;
+import android.os.Build;
 import android.os.IBinder;
 import android.provider.ContactsContract;
 import android.support.annotation.NonNull;
@@ -32,6 +36,12 @@ public class Alerts extends Service {
     }
 
 
+    @Override
+    public void onStart(Intent intent, int startId) {
+        super.onStart(intent, startId);
+        listenAlerts();
+    }
+
     void listenAlerts(){
         String path = "alerts/";
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference(path);
@@ -55,14 +65,14 @@ public class Alerts extends Service {
 
 
     }
-    void notification(){
-        if(isRunningFirst){
+    void notification() {
+        if (isRunningFirst) {
             isRunningFirst = false;
             return;
         }
 
-        AlertBluePrint latest = alerts.get(alerts.size()-1);
-        Toast.makeText(this, "Msg: "+latest.getMessage(), Toast.LENGTH_SHORT).show();
+        AlertBluePrint latest = alerts.get(alerts.size() - 1);
+//        Toast.makeText(this, "Msg: " + latest.getMessage(), Toast.LENGTH_SHORT).show();
         NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(Alerts.this, "12")
                 .setSmallIcon(R.drawable.logofsai)
                 .setContentTitle(latest.getTitle())
@@ -73,8 +83,24 @@ public class Alerts extends Service {
 //        mBuilder.notify();
         NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
 
+        NotificationManager notificationManagerOreo = (NotificationManager) getApplicationContext().getSystemService(Context.NOTIFICATION_SERVICE);
 
-        notificationManager.notify(58, mBuilder.build());
+        if(notificationManagerOreo == null){
+            Toast.makeText(this, "Error in manager", Toast.LENGTH_SHORT).show();
+        }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+
+            /* Create or update. */
+            NotificationChannel channel = new NotificationChannel("01",
+                    "channel",
+                    NotificationManager.IMPORTANCE_DEFAULT);
+            notificationManagerOreo.createNotificationChannel(channel);
+//            notificationManagerOreo.createNotificationChannel();
+            notificationManagerOreo.notify(58,mBuilder.build());
+        }else {
+            notificationManager.notify(58, mBuilder.build());
+
+        }
 
 
 
