@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.mohit_pc.fsai">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+ <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Chat"
+        android:theme="@style/AppTheme.NoActionBar">
+        <intent-filter>
+            <action android:name="android.intent.action.DEFAULT" />
+
+
+        </intent-filter>
+
+    </activity>
+        <activity android:name=".MessageAdapter" />
+        <activity
+            android:name=".FriendlyMessage"
+            android:label="@string/title_activity_friendly_message"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Helper"
+            android:label="@string/title_activity_helper"
+            android:theme="@style/AppTheme.NoActionBar" android:theme="@style/AppTheme.NoActionBar">
+        <intent-filter>
+            <action android:name="android.intent.action.DEFAULT" />
+
+
+        </intent-filter>
+
+    </activity>
+        <activity android:name=".AccidentCard" />
+        <activity android:name=".HomeCard" />
+        <activity android:name=".OtherCard" />
+        <activity android:name=".FireCard" />
+        <activity android:name=".AmputationText" />
+        <activity android:name=".HeadInjuryText" />
+        <activity android:name=".Heartattack" />
+        <activity android:name=".ChestPain" />
+        <activity android:name=".Drowning" />
+        <activity android:name=".SnakeBite" />
+        <activity android:name=".Breathing" />
+        <activity android:name=".Fracture" />
+        <activity android:name=".Burns" />
+        <activity android:name=".ExtingusherText" />
+        <activity android:name=".ClothesText" />
+    </application>
+
+</manifest>

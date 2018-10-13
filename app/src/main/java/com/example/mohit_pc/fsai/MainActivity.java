@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+       // startService(new Intent(this,Alerts.class));
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -159,6 +160,9 @@ public class MainActivity extends AppCompatActivity
                 break;
             case R.id.nav_create_feed:
                 swapFragment(new CreateFeed());
+                break;
+case R.id.nav_create_alert:
+                swapFragment(new CreateNotification());
                 break;
 
         }

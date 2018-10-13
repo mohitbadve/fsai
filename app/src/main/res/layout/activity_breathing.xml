@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AmputationText">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="match_parent"
+            android:layout_height="265dp"
+            app:srcCompat="@drawable/breathing" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="
+\n1. If someone is having breathing difficulty, call 911 or your local emergency number then:
+Check the person's airway, breathing and pulse.lf necessary, begin CPR.
+\nLoosen any tight clothing.
+\nHelp the person use any prescribed medicine (an asthma inhaler or home oxygen).
+\nContinue to monitor the person's breathing and pulse until medical help arrives. Do not
+assume that the person's condition is improving if you can no longer hear abnormal breath sounds,
+such as wheezing.
+\nIf there are open wounds in the neck or chest, they must be closed immediately, especially if air
+bubbles appear in the wound. Bandage such wounds at once.
+\nA sucking chest wound allows air to enter the person's chest cavity with each breath. This can
+cause a collapsed lung.
+\nBandage the wound with plastic wrap, a plastic bag, or gauze pads covered with petroleum jelly,
+sealing it exceot for one corner.
+\nThis allows trapped air to escape from the chest, but it prevents air from entering the chest through
+the wound.
+\n\nDO NOT:-
+\nGive the person food or drink.
+\nMove the person if there has been a head, neck, chest or airway injury, unless it is absolutely
+necessary. Protect the neck if the person must be moved.
+\nPlace a pillow under the person's head. This can close the airway.
+\nMove the person if there has been a head, neck, chest or airway injury, unless it is absolutely
+necessary. Protect the neck if the person must be moved.
+\nPlace a pillow under the person's head. This can close the airway.
+\nWait to see if the person's condition improves before getting medical help. Get help immediately."          />
+
+
+    </LinearLayout>
+</ScrollView>

@@ -37,9 +37,12 @@ public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.ViewHolder> {
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
 
         viewHolder.unExpandedTitle.setText(feeds.get(i).getTitle());
+viewHolder.content.setText(feeds.get(i).getContent()+"\nCreated By:"+feeds.get(i).getCreatedBy());
 
         try {
             Picasso.get().load(feeds.get(i).getImage()).fit().centerCrop().into(viewHolder.unExpandedImage);
+            Picasso.get().load(feeds.get(i).getImage()).fit().centerCrop().into(viewHolder.expandedImage);
+
         }catch (Exception e){
 
         }
@@ -56,6 +59,7 @@ public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.ViewHolder> {
         FoldingCell fc;
         ImageView expandedImage,unExpandedImage;
         TextView unExpandedTitle;
+        TextView content;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
@@ -63,6 +67,8 @@ public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.ViewHolder> {
 
             unExpandedImage = itemView.findViewById(R.id.unExpandImage);
             unExpandedTitle = itemView.findViewById(R.id.unExpandTitle);
+            content = itemView.findViewById(R.id.content);
+            expandedImage = itemView.findViewById(R.id.expandedImage);
 
 
 
@@ -72,6 +78,8 @@ public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.ViewHolder> {
                 @Override
                 public void onClick(View view) {
                     fc.toggle(false);
+
+
                 }
             });
         }

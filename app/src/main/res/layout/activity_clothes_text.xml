@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AmputationText">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="265dp"
+            app:srcCompat="@drawable/clothestechnique" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Stop: \n\nDon't run or wave your arms. The movement will fan the flames and cause the burns to be more severe. While you may want to try to reach water or help, you have to repress this urge and stop right where you are.
+\n\n2.  Drop: \n\nGet on the ground quickly and cover your face with your hands. Lay flat with your legs out straight so as much of your body as possible is in contact with the ground to smother any flames. Covering your face will help prevent facial burns.
+\n\n3.  Roll: \n\nTry to smother the flames by rolling over and over. Pay attention to what's burning and focus on putting out that area of your body."
+            android:textSize="18sp"
+            android:layout_marginLeft="6dp"
+            />
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AmputationText">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="match_parent"
+            android:layout_height="265dp"
+            app:srcCompat="@drawable/fracture" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="
+\n  1. Stop any bleeding: If they're bleeding, elevate and apply pressure to the wound using a sterile bandage, a clean cloth, or a clean piece of clothing.
+\n  2. Immobilize the injured area: If you suspect they've broken a bone in their neck or back, help
+them stay as still as possible. If you suspect they've broken a bone in one of their limbs,
+immobilize the area using a splint or sling.
+\n  3. Apply cold to the area: Wrap an ice pack or bag of ice cubes in a piece of cloth and apply it to the injured area for up to 10 minutes at a time.
+\n  4. Treat them for shock: Help them get into a comfortable position, encourage them to rest, and reassure them. Cover them with a blanket or clothing to keep them warm.
+\n  5. Get professional help: Call 911 or help them get to the emergency department for professional care."
+            android:layout_marginLeft="6dp"
+            tools:ignore="HardcodedText" />
+
+
+    </LinearLayout>
+</ScrollView>

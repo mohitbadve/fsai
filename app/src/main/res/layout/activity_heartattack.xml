@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AmputationText">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="match_parent"
+            android:layout_height="265dp"
+            app:srcCompat="@drawable/heartattack" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="\n1. Call your local emergency number for medical help and say you think someone is having a
+heart attack.
+\n2. Then, help move them into the most comfortable position.The best position is on the floor leaning against a wall with knees bent and head and shoulders supported.
+\n3. This should ease the pressure on their heart and stop them hurting themselves if they collapse.
+\n4. Give them a 300mg aspirin, if available and they&#39;re not allergic, and tell them to chew it slowly.
+\n5. Be aware that they may develop shock. Shock does not mean emotional shock, but is a life threatening condition, which can be brought on by a heart attack.
+\n6. Keep checking their breathing, pulse and level of response.
+\n7. If they lose responsiveness at any point, open their airway, check their breathing, and prepare to treat someone who has become unresponsive. You may need to do CPR."
+            android:layout_marginLeft="6dp"
+            />
+
+
+    </LinearLayout>
+</ScrollView>

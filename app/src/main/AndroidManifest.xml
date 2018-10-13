@@ -5,6 +5,9 @@
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+ <!--<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
+
 
     <application
         android:allowBackup="true"
@@ -13,6 +16,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <!--tools:ignore="GoogleAppIndexingWarning">-->
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
@@ -23,7 +27,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Chat" />
+        <activity android:name=".Chat"
+        android:theme="@style/AppTheme.NoActionBar">
+        <!--<intent-filter>
+            <action android:name="android.intent.action.DEFAULT" />
+
+
+        </intent-filter>-->
+
+    </activity>
         <activity android:name=".MessageAdapter" />
         <activity
             android:name=".FriendlyMessage"
@@ -32,7 +44,43 @@
         <activity
             android:name=".Helper"
             android:label="@string/title_activity_helper"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" >
+       <!-- <intent-filter>
+            <action android:name="android.intent.action.DEFAULT" />
+
+
+        </intent-filter>-->
+
+    </activity>
+        <activity android:name=".AccidentCard" />
+        <activity android:name=".HomeCard" />
+        <activity android:name=".OtherCard" />
+        <activity android:name=".FireCard" />
+        <activity android:name=".AmputationText" />
+        <activity android:name=".HeadInjuryText" />
+        <activity android:name=".Heartattack" />
+        <activity android:name=".ChestPain" />
+        <activity android:name=".Drowning" />
+        <activity android:name=".SnakeBite" />
+        <activity android:name=".Breathing" />
+        <activity android:name=".Fracture" />
+        <activity android:name=".Burns" />
+        <activity android:name=".ExtingusherText" />
+        <activity android:name=".ClothesText" />
+
+		<!--<service
+            android:name=".Alerts"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".BootReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter >
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>-->
     </application>
 
 </manifest>

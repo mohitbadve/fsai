@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
-            android:visibility="gone">
+            android:visibility="visible">
             <!--<include layout="@layout/expanded_cell"/>-->
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
@@ -36,6 +36,7 @@
                         android:layout_marginBottom="25dp"/>
 
                     <TextView
+                        android:id="@+id/content"
                         android:textStyle="bold"
                         android:background="#ffffff"
                         android:textSize="22sp"
@@ -44,7 +45,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignParentBottom="true"
-                        android:text="This is usellesss title expanded"/>
+                        android:text="Content"/>
 
 
                 </RelativeLayout>
@@ -54,6 +55,7 @@
         </FrameLayout>
         ​
         <FrameLayout
+            android:visibility="gone"
             android:id="@+id/cell_title_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">

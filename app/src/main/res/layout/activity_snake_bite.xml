@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AmputationText">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="match_parent"
+            android:layout_height="265dp"
+            app:srcCompat="@drawable/snakebiteinside" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="
+\n1. Call medical help immediately if possible.
+\n2. Remain calm, remember most snake bites are not fatal.
+\n3. Minimise movement if possible. If you are hiking alone you may have to hike out for help.
+\n4. If you are bitten on the arm or finger remove any rings, bracelets or watches. Loosen any tight
+clothing in case swelling occurs.
+\n5. Apply a pressure bandage to the bitten limb. If the bite is to the trunk, head or neck, apply firm
+pressure to the bitten area. Do not restrict chest movement as breathing will be affected by this.
+\n6. Splint or use a sling on the bitten limb to restrict movement.
+\n7. If there is no bandage or equivalent to apply a pressure bandage make note of any inflammation
+by tracing the edge of the swelling with a pen or the like neararound the bite and mark the time
+clearly next to it. If it progresses make a new tracing noting the time of each new mark beside that
+new tracing. This will give valuable information to medical help as to the development of the
+swelling.
+\n8. If possible, lie down and keep the bitten extremity at body level. Raising it can cause venom to
+travel through the body quicker. Holding it down, can increase swelling.
+\n9. If possible, lie down and keep the bitten extremity at body level. Raising it can cause venom to
+travel through the body quicker. Holding it down, can increase swelling."          />
+
+
+    </LinearLayout>
+</ScrollView>
