@@ -8,30 +8,31 @@
             android:id="@+id/nav_first_layout"
             android:icon="@drawable/ic_menu_camera"
             android:title="Situation" />
-        <item
-            android:id="@+id/nav_second_layout"
-            android:icon="@drawable/ic_menu_share"
-            android:title="Feed" />
+        <!--<item-->
+            <!--android:id="@+id/nav_second_layout"-->
+            <!--android:icon="@drawable/ic_menu_share"-->
+            <!--android:title="Feed" />-->
         <item
             android:id="@+id/nav_share"
             android:icon="@android:drawable/ic_menu_call"
             android:title="Quick Dial" />
-        <item
-            android:id="@+id/nav_send"
-            android:icon="@android:drawable/ic_menu_help"
-            android:title="Help" />
+
         <item
             android:id="@+id/nav_feed"
             android:icon="@drawable/ic_perm_media_black_24dp"
             android:title="Feed" />
  <item
             android:id="@+id/nav_create_feed"
-            android:icon="@drawable/ic_perm_media_black_24dp"
+            android:icon="@drawable/ic_menu_share"
             android:title="Create Feed" />
  <item
             android:id="@+id/nav_create_alert"
             android:icon="@drawable/create_feed"
             android:title="Create Alert" />
+        <item
+            android:id="@+id/nav_send"
+            android:icon="@android:drawable/ic_menu_help"
+            android:title="Help" />
 
     </group>
 

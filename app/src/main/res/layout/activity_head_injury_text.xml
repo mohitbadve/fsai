@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AmputationText">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="265dp"
+            app:srcCompat="@drawable/headtop" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  1. Check the person's airway, breathing, and circulation. If necessary, begin rescue breathing and CPR.\n
+  2. If the person's breathing and heart rate are normal, but the person js unconscious, treat as if there is a spinal injury. Stabilize the head and neck by placing your hands on both sides of the person's head. Keep the head in line with the spine and prevent movement. Wait for medical help.
+\n  3. Stop any bleeding by firmly pressing a clean cloth on the wound. If the injury is serious, be
+careful not to move the person's head. If blood soaks through the cloth, do not remove it. Place another cloth over the first one.
+\n  4. If you suspect a skull fracture, do not apply direct pressure to the bleeding site, and do not
+remove any debris from the wound. Cover the wound with sterile gauze dressing.
+\n  5. If the person is vomiting, to prevent choking, roll the person's head, neck, and body as one unit onto their side. This still protects the spine, which you must always assume is injured in the case of a head injury. Children often vomit once after a head injury. This may not be a problem, but call a doctor for further guidance.
+\n  6. Apply ice packs to swollen areas."
+            android:textSize="18sp"
+            android:layout_marginLeft="6dp"
+             />
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AmputationText">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="match_parent"
+            android:layout_height="265dp"
+            app:srcCompat="@drawable/chestpaininside" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="
+\n1. Shout or call for the help.
+\n2. Ask the person to rest and not to move.
+\n3. Ask the person to sit down in a comfortable position at a safe location nearby.
+\n4. Reassure the person and tell him what is happening.
+\n5. Ask the person if he takes medication for his heart condition. If so, allow him to take the
+prescribed medication.
+\n6. If there is aspirin available , ask if he has any bleeding disorder or any condition that contradicts the usage of aspirin. If none, ask the person to chew on an aspirin tablet and swallow it as it will help the blood flow to the heart."
+            android:layout_marginLeft="6dp"
+            />
+
+
+    </LinearLayout>
+</ScrollView>

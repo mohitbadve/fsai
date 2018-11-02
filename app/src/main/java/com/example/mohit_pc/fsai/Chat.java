@@ -104,7 +104,7 @@ public class Chat extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // TODO: Send messages on click
-                String time = (DateFormat.getDateTimeInstance(2, 3).format(Calendar.getInstance().getTime())).substring(13,20);
+                String time = DateFormat.getDateTimeInstance(DateFormat.SHORT, DateFormat.DEFAULT).format(Calendar.getInstance().getTime());
                 System.out.println(time);
                 FriendlyMessage friendlyMessage = new FriendlyMessage(mMessageEditText.getText().toString(), mUsername, null, time);
                 mMessagesDatabaseRefrence.push().setValue(friendlyMessage);

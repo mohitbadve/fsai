@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AmputationText">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="265dp"
+        app:srcCompat="@drawable/a2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\n\n1. Control blood loss by applying direct pressure and raising the injured part above the casualty's heart.\n
+2. Place a sterile dressing or a non-fluffy clean pad on the wound, and secure it with a bandage.
+\n3. Treat the casualty for shock.
+\n4. Call 999/112 for emergency help. Tell them amputation is involved.
+\n5. Monitor and record vital signs - level of response, breathing and pulse - while waiting for help to arrive.
+\n
+\nNOTE:
+\n1. DO NOT wash the severed part.
+\n2. DO NOT let the severed part touch the crushed ice when packing it.
+\n3. DO NOT allow the casualty to eat or drink because an anaesthetic may be needed."
+            android:textSize="18sp"
+            android:layout_marginLeft="6dp"
+             />
+
+
+    </LinearLayout>
+</ScrollView>

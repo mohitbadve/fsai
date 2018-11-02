@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/constraintLayout"
+    android:background="@drawable/background_fire"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Helper$PlaceholderFragment">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
     android:background="@drawable/background_fire"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -17,7 +27,7 @@
         android:layout_marginEnd="@dimen/activity_horizontal_margin"
         android:layout_marginStart="@dimen/activity_horizontal_margin"
         android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:text="Quick Dial\n\nThis feature Helps You to Call Emergency Contacts in just One Click
+        android:text="Quick Dial:\n\nThis feature Helps You to Call Emergency Contacts in just One Click
 "
         android:textColor="#000000"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -34,7 +44,7 @@
         android:layout_width="358dp"
 
         android:layout_height="wrap_content"
-        android:text="Situation\n\nThis Section Covers all the Solutions For Problems Faced By A Person During Emergency."
+        android:text="\nSituation\n\nThis Section Covers all the Solutions For Problems Faced By A Person During Emergency."
         android:textColor="#000000"
         android:layout_marginLeft="@dimen/activity_horizontal_margin" />
 
@@ -46,7 +56,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
         android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:text="\n\nCreate Alert\n\nThis Section helps you to send an alert to all the devices about the entered emergency "
+        android:text="\n\n\nCreate Alert\n\nThis Section helps you to send an alert to all the devices about the entered emergency "
         android:textColor="#000000" />
     <TextView
         android:id="@+id/section_label4"
@@ -55,7 +65,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
         android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:text="\n\nFeed\n\nThis Section helps you to view all the feeds uploaded by people."
+        android:text="\n\n\nFeed\n\nThis Section helps you to view all the feeds uploaded by people."
         android:textColor="#000000" />
     <TextView
         android:id="@+id/section_label5"
@@ -64,7 +74,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
         android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:text="\n\nCreate Feed\n\nThis Section allows you to upload a feed."
+        android:text="\n\n\nCreate Feed\n\nThis Section allows you to upload a feed."
         android:textColor="#000000" />
     <TextView
         android:id="@+id/section_label6"
@@ -73,7 +83,8 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
         android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:text="\n\nChat\n\nThe Chat section is for asking questions and is active 24 X 7."
+        android:text="\n\n\nChat\n\nThe Chat section is for asking questions and is active 24 X 7."
         android:textColor="#000000" />
 
 </LinearLayout>
+</ScrollView>

@@ -49,7 +49,7 @@ public class Alerts extends Service {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 alerts.clear();
-                Toast.makeText(Alerts.this, "Data received", Toast.LENGTH_SHORT).show();
+               // Toast.makeText(Alerts.this, "Data received", Toast.LENGTH_SHORT).show();
                 for(DataSnapshot child : dataSnapshot.getChildren()){
                     alerts.add(child.getValue(AlertBluePrint.class));
                 }

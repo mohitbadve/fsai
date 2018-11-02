@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AmputationText">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="match_parent"
+            android:layout_height="265dp"
+            app:srcCompat="@drawable/drowninginside" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="
+\nAs soon as the casualty has been rescued from the water, check if they're breathing.
+\nAsk someone to call 999 or 112 for medical help.
+\nIf the person is unresponsive and not breathing, give them five initial rescue breaths before
+starting CPR(Cardio Pulmonary Resuscitation).
+\nOnce you've done this, start CPR:
+\n30 chest compressions, then two rescue breaths. Keep giving CPR until help arrives, the casualty
+regains responsiveness, or you're too exhausted to keep going.
+\nIf they start breathing again at any time, treat them for hypothermia by covering them with warm
+clothes and blankets. If they recover completely, replace their wet clothes with dry ones.
+\nKeep checking breathing, pulse and level of response until help arrives."
+            />
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AmputationText">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="match_parent"
+            android:layout_height="265dp"
+            app:srcCompat="@drawable/burnsinside" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="
+\n1. For Minor Burns :
+\nCool the burn to help soothe the pain. Hold the burned area under cool (not cold) running water for 10 to 15 minutes or until the pain eases. Or apply a clean towel dampened with cool tap water.
+\nRemove rings or other tight items from the burned area.Try to do this quickly and gently, before the area swells.
+\nDon't break small blisters (no bigger than your little fingernail). If blisters break, gently clean the area with mild soap and water, apply an antibiotic ointment, and cover it with a nonstick gauze bandage.
+\nApply moisturizer or aloe vera lotion or gel, which may provide relief in some cases.
+\nIf needed, take an over-the-counter pain reliever, such as ibuprofen (Advil, Motrin IB, others),
+naproxen sodium (Aleve) or acetaminophen (Tylenol, others).
+\nConsider a tetanus shot. Make sure that your tetanus booster is up to date. Doctors recommend
+people get a tetanus shot at least every 10 years.
+
+\n\n\n2. For Major Burns :
+\nCall 911 or emergency medical help for major burns. Until an emergency unit arrives, take these
+
+actions:
+\nProtect the burned person from further harm. If you can do so safely, make sure the person you're
+helping is not in contact with smoldering materials or exposed to smoke or heat. But don't remove
+burned clothing stuck to the skin
+\nCheck for signs of circulation Look for breathing, coughing or movement. Begin CPR if needed.
+\nRemove jewelry, belts and other restrictive items,especially from around burned areas and the
+neck. Burned areas swell rapidly.
+\nDon't immerse large severe burns in cold water. Doing so could cause a serious loss of body heat
+(hypothermia) or a drop in blood pressure and decreased blood flow (shock).
+\nElevate the burned area. Raise the wound above heart level, if possible.
+\nCover the area of the burn. Use a cool, moist, bandage or a clean cloth."
+            android:layout_marginLeft="6dp"
+            />
+
+
+    </LinearLayout>
+</ScrollView>

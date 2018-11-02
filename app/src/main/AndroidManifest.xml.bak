@@ -29,7 +29,7 @@
         </activity>
         <activity
             android:name=".Chat"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
@@ -58,23 +58,6 @@
 
         <activity android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
-		
-		
-        <activity android:name=".AccidentCard" />
-        <activity android:name=".HomeCard" />
-        <activity android:name=".OtherCard" />
-        <activity android:name=".FireCard" />
-        <activity android:name=".AmputationText" />
-        <activity android:name=".HeadInjuryText" />
-        <activity android:name=".Heartattack" />
-        <activity android:name=".ChestPain" />
-        <activity android:name=".Drowning" />
-        <activity android:name=".SnakeBite" />
-        <activity android:name=".Breathing" />
-        <activity android:name=".Fracture" />
-        <activity android:name=".Burns" />
-        <activity android:name=".ExtingusherText" />
-        <activity android:name=".ClothesText" />
     </application>
 
 </manifest>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AmputationText">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="265dp"
+            app:srcCompat="@drawable/useextinguisher" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" 1. Pull:\n\t   Pull the pin\n\n\n2. Aim:\n\t  Aim the nozzle or hose at the base of the fire from the recommended safe distance.\n\n\n3. Squeeze:\n\t  Squeeze the operating lever to discharge the fire extinguisher agent.\n\n4. Sweep\n\t  Starting at the recommended distance,Sweep the nozzle or hose from side to side until the fire is out. Move forward or around the fire area as the fire diminishes. Watch the area in case of re-ignition."
+            android:textSize="18sp"
+            android:layout_marginLeft="6dp"
+            />
+
+
+    </LinearLayout>
+</ScrollView>

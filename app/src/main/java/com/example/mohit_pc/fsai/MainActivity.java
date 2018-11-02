@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity
     FirstFragment firstFragment = null;
     SecondFragment secondFragment = null;
     ThirdFragment thirdFragment = null;
+    Tab1Step1 tab1 = null;
     FourthFragment fourthFragment = null;
     Feed feed = null;
 
@@ -44,7 +45,7 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View view) {
                 //  Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 //   .setAction("Action", null).show();
-                Toast.makeText(MainActivity.this, "Chat", Toast.LENGTH_SHORT).show();
+              //  Toast.makeText(MainActivity.this, "Chat", Toast.LENGTH_SHORT).show();
                 Intent intent =new Intent( MainActivity.this ,Chat.class);
                 startActivity(intent);
 
@@ -59,7 +60,7 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-        swapFragment(new Feed());
+        swapFragment(new ThirdFragment());
     }
 
     @Override
@@ -127,15 +128,15 @@ public class MainActivity extends AppCompatActivity
 
                 break;
 
-            case  R.id.nav_second_layout:
-                if(secondFragment == null){
-                    secondFragment = new SecondFragment();
-
-                }
-                swapFragment(secondFragment);
-
-
-                break;
+//            case  R.id.nav_second_layout:
+//                if(secondFragment == null){
+//                    secondFragment = new SecondFragment();
+//
+//                }
+//                swapFragment(secondFragment);
+//
+//
+//                break;
 
             case R.id.nav_share:
                 if(thirdFragment == null){
@@ -146,10 +147,10 @@ public class MainActivity extends AppCompatActivity
                 break;
 
             case R.id.nav_send:
-                if(fourthFragment == null){
-                    fourthFragment = new FourthFragment();
+                if(tab1 == null){
+                    tab1 = new Tab1Step1();
                 }
-                swapFragment(fourthFragment);
+                swapFragment(tab1);
 
                 break;
             case R.id.nav_feed:
